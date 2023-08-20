@@ -3,22 +3,23 @@
 <head>
 <meta charset="utf-8"> <!DOCTYPE html>
 <html lang="en">
-  <style>
+  <style> body {
+    overflow-x: hidden;
+  }
+ h1
+    {text-align: center;;
+    color: #495251;font-weight: lighter;font-family:'STXihei',sans-serif}
+p{position:absolute;margin-left:200px;color:  #acacac;font-size:14px;letter-spacing:170%;line-height:180%;width:980px;}
 
-h1
-{text-align: center;;
-color:#495251;font-weight: lighter;font-family:'STXihei',sans-serif;
-}
-p
-{position:relative;margin-left:230px;width: 900px;
-color:  #a9a9a9;font-size:16px;font-weight: lighter;}
-.marked
-{font-size:17px;color:#85928e; width: 950px;}
-ul.a {position:relative;margin-left:230px;color:#a9a9a9;}
+.m{top:40px;left:-170px; }
+.v{top:60px;left:-170px}
+.l{top:80px;left:-170px}
+.f{top:110px;left:-170px}
 
-
-ul.a {list-style-type:square;color:#a9a9a9;}
-
+ul.a {position:absolute;list-style-type:square;color:#a9a9a9;
+  left:180px;top:200px;width:1000px;}
+  ul.u{position:absolute;list-style-type:square;color:#a9a9a9;
+top:470px;left:-1px}
 a:link {color:#a9a9a9;text-decoration: none;}      /* 未访问链接*/
 a:visited {color:#6b6b6b;}  /* 已访问链接 */
 a:hover {color:#7f7f7f;}  /* 鼠标移动到链接上 */
@@ -28,10 +29,10 @@ a:active {color:#313131;}  /* 鼠标点击时 */
  
 .icons8-sun { position:absolute;
 display: inline-block;
-width: 20px;
+width: 15px;
 height: 20px;
 background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmY2Q4MTkiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoOC41MzMzMyw4LjUzMzMzKSI+PHBhdGggZD0iTTE0Ljk4NDM4LDAuOTg2MzNjLTAuNTUxNTIsMC4wMDg2MiAtMC45OTE5MywwLjQ2MjE0IC0wLjk4NDM3LDEuMDEzNjd2M2MtMC4wMDUxLDAuMzYwNjQgMC4xODQzOCwwLjY5NjA4IDAuNDk1ODcsMC44Nzc4OWMwLjMxMTUsMC4xODE4MSAwLjY5Njc2LDAuMTgxODEgMS4wMDgyNSwwYzAuMzExNSwtMC4xODE4MSAwLjUwMDk3LC0wLjUxNzI1IDAuNDk1ODcsLTAuODc3ODl2LTNjMC4wMDM3LC0wLjI3MDMgLTAuMTAyMTgsLTAuNTMwNTkgLTAuMjkzNTEsLTAuNzIxNTVjLTAuMTkxMzMsLTAuMTkwOTcgLTAuNDUxODIsLTAuMjk2MzQgLTAuNzIyMTIsLTAuMjkyMTJ6TTUuNzk2ODgsNC43OTg4M2MtMC40MDY1NywwLjAwMDkgLTAuNzcyMTMsMC4yNDc4NCAtMC45MjQ3NSwwLjYyNDY3Yy0wLjE1MjYyLDAuMzc2ODQgLTAuMDYxOTIsMC44MDg1NiAwLjIyOTQ0LDEuMDkyMTJsMi4xMjEwOSwyLjEyMTA5YzAuMjUwODIsMC4yNjEyMyAwLjYyMzI2LDAuMzY2NDYgMC45NzM3LDAuMjc1MWMwLjM1MDQ0LC0wLjA5MTM2IDAuNjI0MTEsLTAuMzY1MDMgMC43MTU0NiwtMC43MTU0NmMwLjA5MTM2LC0wLjM1MDQ0IC0wLjAxMzg3LC0wLjcyMjg4IC0wLjI3NTEsLTAuOTczN2wtMi4xMjEwOSwtMi4xMjEwOWMtMC4xODg3NCwtMC4xOTQwMiAtMC40NDgwNywtMC4zMDMyNSAtMC43MTg3NSwtMC4zMDI3M3pNMjQuMTcxODgsNC43OTg4M2MtMC4yNTk4LDAuMDA3NzQgLTAuNTA2MzgsMC4xMTYzMiAtMC42ODc1LDAuMzAyNzNsLTIuMTIxMDksMi4xMjEwOWMtMC4yNjEyMywwLjI1MDgyIC0wLjM2NjQ1LDAuNjIzMjYgLTAuMjc1MSwwLjk3MzdjMC4wOTEzNiwwLjM1MDQzIDAuMzY1MDMsMC42MjQxIDAuNzE1NDYsMC43MTU0NmMwLjM1MDQzLDAuMDkxMzYgMC43MjI4OCwtMC4wMTM4NyAwLjk3MzcsLTAuMjc1MWwyLjEyMTA5LC0yLjEyMTA5YzAuMjk1NzYsLTAuMjg3NDkgMC4zODQ2OSwtMC43MjcwNyAwLjIyMzkzLC0xLjEwNjkxYy0wLjE2MDc1LC0wLjM3OTg1IC0wLjUzODIxLC0wLjYyMjA0IC0wLjk1MDUsLTAuNjA5ODh6TTE1LDhjLTMuODY1OTksMCAtNywzLjEzNDAxIC03LDdjMCwzLjg2NTk5IDMuMTM0MDEsNyA3LDdjMy44NjU5OSwwIDcsLTMuMTM0MDEgNywtN2MwLC0zLjg2NTk5IC0zLjEzNDAxLC03IC03LC03ek0yLDE0Yy0wLjM2MDY0LC0wLjAwNTEgLTAuNjk2MDgsMC4xODQzOCAtMC44Nzc4OSwwLjQ5NTg3Yy0wLjE4MTgxLDAuMzExNSAtMC4xODE4MSwwLjY5Njc2IDAsMS4wMDgyNWMwLjE4MTgxLDAuMzExNSAwLjUxNzI1LDAuNTAwOTcgMC44Nzc4OSwwLjQ5NTg3aDNjMC4zNjA2NCwwLjAwNTEgMC42OTYwOCwtMC4xODQzOCAwLjg3Nzg5LC0wLjQ5NTg3YzAuMTgxODEsLTAuMzExNSAwLjE4MTgxLC0wLjY5Njc2IDAsLTEuMDA4MjVjLTAuMTgxODEsLTAuMzExNSAtMC41MTcyNSwtMC41MDA5NyAtMC44Nzc4OSwtMC40OTU4N3pNMjUsMTRjLTAuMzYwNjQsLTAuMDA1MSAtMC42OTYwOCwwLjE4NDM4IC0wLjg3Nzg5LDAuNDk1ODdjLTAuMTgxODEsMC4zMTE1IC0wLjE4MTgxLDAuNjk2NzYgMCwxLjAwODI1YzAuMTgxODEsMC4zMTE1IDAuNTE3MjUsMC41MDA5NyAwLjg3Nzg5LDAuNDk1ODdoM2MwLjM2MDY0LDAuMDA1MSAwLjY5NjA4LC0wLjE4NDM4IDAuODc3ODksLTAuNDk1ODdjMC4xODE4MSwtMC4zMTE1IDAuMTgxODEsLTAuNjk2NzYgMCwtMS4wMDgyNWMtMC4xODE4MSwtMC4zMTE1IC0wLjUxNzI1LC0wLjUwMDk3IC0wLjg3Nzg5LC0wLjQ5NTg3ek03LjkxMDE2LDIxLjA2MDU1Yy0wLjI1OTgsMC4wMDc3NCAtMC41MDYzOCwwLjExNjMyIC0wLjY4NzUsMC4zMDI3M2wtMi4xMjEwOSwyLjEyMTA5Yy0wLjI2MTIzLDAuMjUwODIgLTAuMzY2NDYsMC42MjMyNiAtMC4yNzUxLDAuOTczN2MwLjA5MTM2LDAuMzUwNDQgMC4zNjUwMywwLjYyNDEgMC43MTU0NiwwLjcxNTQ2YzAuMzUwNDQsMC4wOTEzNiAwLjcyMjg4LC0wLjAxMzg3IDAuOTczNywtMC4yNzUxbDIuMTIxMDksLTIuMTIxMDljMC4yOTU3NiwtMC4yODc0OSAwLjM4NDY5LC0wLjcyNzA3IDAuMjIzOTMsLTEuMTA2OTFjLTAuMTYwNzUsLTAuMzc5ODUgLTAuNTM4MjEsLTAuNjIyMDQgLTAuOTUwNSwtMC42MDk4OHpNMjIuMDYwNTUsMjEuMDYwNTVjLTAuNDA2OTIsMC4wMDAxMSAtMC43NzMyMSwwLjI0Njc2IC0wLjkyNjMzLDAuNjIzNzdjLTAuMTUzMTIsMC4zNzcwMSAtMC4wNjI1NSwwLjgwOTIyIDAuMjI5MDcsMS4wOTMwM2wyLjEyMTA5LDIuMTIxMDljMC4yNTA4MiwwLjI2MTIzIDAuNjIzMjYsMC4zNjY0NSAwLjk3MzcsMC4yNzUwOWMwLjM1MDQzLC0wLjA5MTM2IDAuNjI0MSwtMC4zNjUwMiAwLjcxNTQ2LC0wLjcxNTQ2YzAuMDkxMzYsLTAuMzUwNDMgLTAuMDEzODYsLTAuNzIyODggLTAuMjc1MDksLTAuOTczN2wtMi4xMjEwOSwtMi4xMjEwOWMtMC4xODgyNywtMC4xOTM1MyAtMC40NDY4LC0wLjMwMjcyIC0wLjcxNjgsLTAuMzAyNzN6TTE0Ljk4NDM4LDIzLjk4NjMzYy0wLjU1MTUyLDAuMDA4NjIgLTAuOTkxOTMsMC40NjIxNCAtMC45ODQzNywxLjAxMzY3djNjLTAuMDA1MSwwLjM2MDY0IDAuMTg0MzgsMC42OTYwOCAwLjQ5NTg3LDAuODc3ODljMC4zMTE1LDAuMTgxODEgMC42OTY3NiwwLjE4MTgxIDEuMDA4MjUsMGMwLjMxMTUsLTAuMTgxODEgMC41MDA5NywtMC41MTcyNSAwLjQ5NTg3LC0wLjg3Nzg5di0zYzAuMDAzNywtMC4yNzAzIC0wLjEwMjE4LC0wLjUzMDU5IC0wLjI5MzUxLC0wLjcyMTU1Yy0wLjE5MTMzLC0wLjE5MDk3IC0wLjQ1MTgyLC0wLjI5NjM0IC0wLjcyMjEyLC0wLjI5MjEyeiI+PC9wYXRoPjwvZz48L2c+Cjwvc3ZnPg==') 50% 50% no-repeat;
-background-size: 100%; top:9px;
+background-size: 100%; top:10px;
 }
        
 
@@ -42,38 +43,37 @@ background-size: 100%; top:9px;
   <meta http-equiv="Content-Type" content="text/html; ">
 </head>
 <body>
-<script language="javascript">
-var Arraycolor=new Array("black","white","black",);
-var n=0;
-function turncolors(){
-  if (n==(Arraycolor.length-1)) n=0;
-  n++;
-  document.bgColor = Arraycolor[n];
-}
-</script>
-<form name="form1" method="post" action="">
-  <div>
-    <input type="checkbox"  style="width:8px;height:18px;" onclick="turncolors()">
-    <span class="icons8-sun"></span>
-   </div>
-</form>
+  <script>
+    var colors = ["black", "white"];
+    var index = 0;
 
+    function toggleColor() {
+      index = (index + 1) % colors.length;
+      document.body.style.backgroundColor = colors[index];}
+
+    // 设置默认的背景颜色为黑色
+    document.body.style.backgroundColor = colors[0];
+  </script>
+
+  <div>
+    <input style="width:8px;height:18px;"type="checkbox" onclick="toggleColor()">
+    <span class="icons8-sun"></span></div>
+   </div>
 
 
 
 <h1>Language, Logic and Theories of Meaning </h1>
 
-<p>Let’s declare war against Man and all forms of Humanism</p>
-<div class="marked">
-	<p class="marked">Teilhard de Chardin</p></div>
-  <p class="marked">Valentin Turchin</p></div>
+<p>Let’s declare war against Man and all forms of Humanism<br><br>
+Writing</p>
+<ul class="a" ><li><a href="R.pdf" target="_self">Notes on Martin Lof’s Siena Lectures.</a>An outline for the rationale behind the constructions of intuitionistic logical inference systems, starting from Frege’s theory of meaning and culminating in Martin-Lof style dependent type theory.</li>
+
+<p class="m">Teilhard de Chardin</p>
+<p class="v">Valentin Turchin</p>
+<p class="l">Possible links</p>
 
 
-<p>Possible links</p>
-<div class="marked">
-  <ul class="a" ><li>Semantic anti-realism</li><a href="R.pdf" target="_self">Realism,Dummett.pdf[中]</a></b></p></ul> 
-  <div class="marked" >
-    <p > Further comments on Dummett's Comments on Frege<br>
+<p class="f"> Further comments on Dummett's Comments on Frege<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           语言,暗示着“名称”的意义和人们所掌握的“关于名称持有者的”信息之间，没有一条明确的界限可以划分。任何一个[行为]都可以是一个简单的明示,即理解一个词不仅仅包括将某一事物与该词作为其指代物联系起来,还包括与识别包含该词的句子的真假有关的部分.<br>
     
@@ -83,10 +83,10 @@ function turncolors(){
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个“语言的游戏”——由每一个单个词("意义单位 ")影响的.<br>
     
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;把更多的看作语言,将一些看似直接的专有名词（如亚历山大大帝）的Sinn-Bedeutung区别于各种形式的语言神秘主义（如卡巴拉）中的真名学说进行比较，会很有意思。<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，对于像 "亚历山大大帝 "这样的名字，问题是对于生活在21世纪的人来说，什么算作Bedeutung是不清楚的。如果说“Axial Age”见证了影响至今的宗教和哲学的诞生，从语言学的角度仅仅将这概括为从口语到读写(如Stichometry )的转变,
-    则有可能设计一个一致的标准来量化一个拥有更高级概念的历史，例如内省(introspection)，来巩固新的语言，而如果不是这样,那么 “Axial Age”带来的某种人类能力的增强，在很大程度上是取决于口语-读写能力关系之外的社会偶然事件。<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此外，对于像 "亚历山大大帝 "这样的名字，对于生活在21世纪的人来说，什么算作Bedeutung是不清楚的。<br><br>
     Cybernetics<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算机架构总是带有一个固定的指令集,即顺序模型。问题：为什么要把记忆与智力分离开来？这种做法似乎是由西方心智理论中一种普遍的、基本上是现代或早期现代的趋势形成的，而在圣奥古斯丁的时代并不是这样的（见奥古斯丁的《论三位一体》）。
-    人们经常说，语言表征的能力，即编码和解码，与意义和语法处理的能力(句法和语义能力)是脱节的，但是，至少对于计算模型来说，输入和输出的表征非常重要。<br>&nbsp;&nbsp;&nbsp;&nbsp;"如果不考虑我们想在集合上执行的操作，用数据类型来讨论集合的表示是没有意义的。"
-    <br>&nbsp;&nbsp;&nbsp;&nbsp;什么是信息？它指导并赋予 "外部 "世界以形式，但为了使它能够指导，它需要被赋予一个形式。没有人对它进行解码和编码，就不应该有信息。秩序性就是如此.
+  <ul class="u" ><li>Computer architectures always come with a fixed instruction set. Sequential models of computation, e.g. Turing machine, push-down automata, are all given a fixed instruction set, while lambda calculus doesn’t seem to possess one. Problem: why disassociating memory from intellect? This practice seems to be shaped by a general, essentially modern or early-modern trend in the Western theory of mind which in St. Augustine’s time wasn’t the case (See Augustine’s On Trinity).</li>
+    <li>It is frequently stated that the ability of language representation, i.e. encoding and decoding, is decoupled from that of meaning and grammar processing (syntactical and semantical abilities), but, at least for computational models, representation of input and output matters. 
+ “It is meaningless to discuss representations of a set by a datatype without also considering operations that we want to perform on the set.” </li>
+ <li> What is information? It directs and gives forms to the “external” world, but for it to be able to direct, it needs to be given a form. There should not be information without someone to decode and encode it. Same with orderliness, etc.
 </body>
